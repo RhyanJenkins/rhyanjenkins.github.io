@@ -211,7 +211,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("C:\Users\Rhylin\Documents\myWork\projects\Portfolio\rhyanjenkins.github.io\assets\img\hero-bg.png") top center;
+  background: url("../img/hero-bg.jpg") top center;
   background-size: cover;
 }
 
