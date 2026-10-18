@@ -1,655 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets\img\favicon.jpg" rel="icon">
-  <!--<link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: iPortfolio - v1.4.1
-  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Rhyan Jenkins — enterprise IT professional and cybersecurity portfolio featuring infrastructure engineering and incident investigations.">
+  <title>Rhyan Jenkins | Cybersecurity Portfolio</title>
+  <!-- Original layout: BootstrapMade iPortfolio v1.4.1, https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ ; retain attribution and applicable license terms. -->
+  <!-- Original hero image preserved at assets/img/hero-bg.jpg; CSS flag stripes are a local offline-preview fallback only. -->
+  <!-- Keep the original iPortfolio vendor and stylesheet paths on the hosted site. -->
+  <link rel="icon" type="image/png" sizes="64x64" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAAwFBMVEX////9///9/f39/Pz9+fr6+/z6+Pn2+fzv9/388vb86/Ht9Prs7/b94er24uv91+P52OPc8fzI6/3K3O6w4P2k4P2j3f2j3P2i2fyc2f2V3P2V2f2S2P2N1v2R1PyH1P2E1P2A0/39z979ydr+xNf+wNT5wtf+vNL9uc/9tMv9r8fHw86K0fyB0v2C0Px80f11z/1nyfv+pcD+kbOnna2MdIRKT1oZJjUSHy8RHCwQGCUJFSYCDiABBg8AAA8AAADBEjoXAAAGT0lEQVR42m2XC1uyShSFJ0EUb6lAiXdLPzXSNGFQ0Pr//+rsy8yAdtaTleV699ozA8yIX6NMJvvP4TAMX0gBCX97Jfmgfr/f3X7HSVq4hP4lTaZBMCSFmvHyqt3kR/tqs14tl5tYPgCyZBgMx+Px0CBCdA1e7/zev816vd6Alss4KwPS/XAyGcPXeDwqEKBBKb73b71erUmbzXa5lQVADoefEyVAjEbwKgPI312tVyRGbDcrqQHpZDJjaQZRNCBAP5RfLVeGAF1st2vJgGw/289JJYQCvL6+KD8MHYooirD5yAiQTPa73WK3WBCBGWNuYqDqd9H+/q4YGvCxShCQzr9Yi93OpFAJIIAu/05iwIqGcbv9WKcASOaHgwYwQQcYaD+631DMKAHiX5EdDyQkLAhgGuD+vaVyawQQGPAByoQ8GABk4PqUX9nfluh7ZjECIyjARorkcCwSoB/Km+rgL9x3BG7hY5uI4+F4PDJhR/FHeCXgdQT27vOjigjcwkkcSQiA+mQPX9Ds91ud9p3+EBDwXQLMqXwAF02v12y6bgP0F8GApQZ8KMAROljMhn6/V3dskOO4TGjcYVQGjMCA71KCRdhv1qriQXaZ0EUBgSPgIBjA8RD267VavRLLpKy4JVwDaNgWIOF9+/ltiRNZAkz6zXodCEL+XFl5Tt/TxLE5Q8ONgChlR1iWZTfa7yXAwe81e+ivieSankkp63yVHSLYjogJHgkaJdttv+tZGPdAkKBWLQG00quEAbUtCwBX/IMn4A0Ms+u47RUlCLS/VnWKFkgXIiTCsQzg4mELFkYAPcM0+uRvor9arcTlIZRpDpY8dSv3gErFEBqib/wAqFTuJzFKMUMObVuVBwB1ATNCgFYBqDqOgy8WDMn5cr7GwqkowOUSCfgYRqDF5iIA/QSwCACdGED8ALgUgCoTBAdoUgDrsQVH5mDJyfMA4DIIaLW4AyhtVStRXJbEAHkK9R8AVRR4DKCGgW3rcRpzcKgOzCAiQPlrNQC0UHDxugCwnb8L6QzLAHsrA7S9Br0zwCUxAGPmRtc8wXVjmRZyBpC/3my2EIBLnQkakEpSmsokEpZNiDsA2esE6HQ6DU0wAI/lCJgVh/2VBwC6wU+ATlsRNCDrRNk5PacyEq5jsb+UoGb8sAYAQPcKAMCrAwDww0DFtwwHIBIKwC3AvxDA/h5JwE0K/XC7g/t/2wZAll8iWyQ3/PS5IDgVBGQEKPx9Afe4Nt6ilu8A6LoIgASWK+Ttkl+uaUcRYAyQmWWeqGs/bJr6Ap87qy1unYAAAPhQngHAcZggWzALOGyimeYQIG1Vwd/T/r54flvDE6oEyBjg2i15BcJNQm0UvIX6N/lk/EB4mYjl9/c3ERQAW8givFlUOukVYD+J8KIoilMc1uwWP5n2/fHX4SC+UTpCtyF/r7fbLbJxVkWUESH24LK4XdH/I43fn+ADXQNUhLd2Qkuw69LCAMINY0fRD7afgb9VV+XH8DD+wgSn04kIahTatKIaamUIT95u1/wawR09h2jG7+++duQ/GoCKAFOJC6OtVpdtxzLNYEHFaQ4L84n9/RFsZcjPgFNpFNRuov2sCI1KpQNDGIlW1BJPPPv+bD6bQwD0FwBDMBsSTgHXGj5WWrVqnRe/P5rBvpQDHMuAgvCm9zWqFWDQXaeJ1cPJFDe2qgEFUBGIYLZ0ROi01IJD+f7LCHbBU+MvACUC70mplY6HJiU4e7yG4Yj9cxqAgxlEAigCbsmJ4Hl+SeSHbfwUG1AzwICkTEAEMd69kjXg6srPA6gAi0TI0yNhvVmxPXgJ+OQTspvLz+bzBS1i3FrOpchOj4TtP/91wIKfbKbiZKcVoLfn8/0FNtslABI2nnLzmQW9NPQoLM/+BZ0OhjFu9093hKjknU6prNKM7Qty0652MkzpwFEifHgh2aEuuaefxkzhFwv64j39NIj5yHMyhGgQDkzp6SdqpkXVFxwd7cNRMM3UoUv7PW76zj0vtMOTkbKPhmEQpObYR/5o8Gjf7/fz/XxHVk3h6vDJwJelgyeUH4xUdu0lzeFl7Po8hedrfyDvj75BEJrOjZ20UwBlxxMBHAfuj74YIp6Gw9H0/9zar6qDexCnf07vdPw/7j8hMy6U3U6bFcCEH3zG8lK4/gN3MfxBUD2U3QAAAABJRU5ErkJggg==">
+  <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/boxicons/css/boxicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+    /* Minimal self-contained fallback matching the current iPortfolio layout
+       so the review copy renders even without the existing repository assets. */
+    :root{--brand:#149ddd;--dark:#040b14;--ink:#272829;--heading:#173b6c;--soft:#f5f8fd}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:"Open Sans",Arial,sans-serif;line-height:1.6;font-size:15px;background:#fff}a{color:#149ddd;text-decoration:none}a:hover{text-decoration:underline}h1,h2,h3,h4{font-family:"Raleway",Arial,sans-serif;line-height:1.25;margin-top:0}button{font:inherit}
+    #header{position:fixed;top:0;left:0;bottom:0;width:300px;padding:0 15px;background:#040b14;overflow:auto;z-index:9997;transition:left .3s}
+    #header .profile{padding-top:15px;text-align:center}#header .profile-image{margin:0 auto 9px;width:120px;height:120px;border-radius:50%;border:8px solid #2c2f3f;overflow:hidden;background:#253449;position:relative}#header .profile-image img{display:block;width:100%;height:100%;object-fit:cover;position:relative;z-index:1}#header .profile-image .placeholder{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#e8f4ff;font-size:35px;font-weight:bold}
+    #header .profile h1{font-size:24px;font-weight:600;margin:0 0 13px}#header .profile h1 a{color:white}#header .profile .social-links{display:flex;justify-content:center;gap:9px}#header .profile .social-links a{display:inline-grid;place-items:center;min-width:36px;height:36px;background:#212431;color:#fff;border-radius:50%;font-size:12px;font-weight:700}
+    .nav-menu{padding-top:27px}.nav-menu ul{list-style:none;padding:0;margin:0}.nav-menu li{margin-bottom:6px}.nav-menu a{display:flex;align-items:center;padding:11px 14px;color:#a8a9b4;font-size:15px}.nav-menu a.active,.nav-menu a:hover{color:#fff;text-decoration:none}.nav-menu a .glyph{color:#6f7180;font-size:20px;width:31px}.nav-menu a.active .glyph,.nav-menu a:hover .glyph{color:#149ddd}
+    #main{margin-left:300px}.mobile-nav-toggle{display:none;position:fixed;top:14px;right:15px;border:none;background:#149ddd;color:#fff;border-radius:50%;width:42px;height:42px;z-index:10000;cursor:pointer;font-size:23px}
+    #hero{position:relative;height:100vh;min-height:630px;background:linear-gradient(120deg,rgba(5,13,24,.65),rgba(5,13,24,.35)),url("assets/img/hero-bg.jpg") center center/cover no-repeat,linear-gradient(to bottom,#5bcffa 0%,#5bcffa 20%,#f5abb9 20%,#f5abb9 40%,#ffffff 40%,#ffffff 60%,#f5abb9 60%,#f5abb9 80%,#5bcffa 80%,#5bcffa 100%);display:flex;align-items:center;justify-content:center;overflow:hidden}
+    #hero:before{content:"";position:absolute;inset:0;background:rgba(5,13,24,.16)}#hero .hero-container{z-index:1;position:relative;padding:22px;max-width:900px}#hero h1{font-size:64px;font-weight:700;line-height:1.05;color:#fff;margin:0 0 12px}#hero p{font-size:26px;color:#fff;line-height:1.5;margin:0;font-family:"Poppins",Arial,sans-serif}#hero .typed{color:white;border-bottom:3px solid #149ddd;letter-spacing:.2px;font-weight:500}#hero .eyebrow{font-size:13px;color:#d9edf7;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:12px}
+    .content-section{padding:64px 0;overflow:hidden}.section-bg{background:#f5f8fd}.container{width:100%;max-width:1140px;padding:0 27px;margin:0 auto}.section-title{padding-bottom:26px}.section-title h2{font-size:32px;font-weight:700;margin:0 0 18px;padding-bottom:18px;position:relative;color:#173b6c}.section-title h2:after{content:"";position:absolute;bottom:0;left:0;width:50px;height:3px;background:#149ddd}.section-title p{margin:0;max-width:900px}
+    .row{display:flex;flex-wrap:wrap;margin:0 -12px}.col-lg-4,.col-lg-8,.col-half,.col-third{padding:0 12px}.col-lg-4{width:33.333%}.col-lg-8{width:66.667%}.col-half{width:50%}.col-third{width:33.333%}
+    .about-photo{height:350px;max-width:100%;background:#e3e8ef;position:relative;overflow:hidden}.about-photo img{width:100%;height:100%;object-fit:cover;position:relative;z-index:1}.about-photo:after{content:'Existing website portrait';position:absolute;left:0;right:0;top:45%;text-align:center;color:#677c94;font-size:13px;z-index:0}
+    .about h3{font-size:26px;color:#173b6c;font-weight:700;margin:0 0 12px}.about p{margin:0 0 15px}.facts-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.fact{padding:15px 5px}.fact strong{font-size:36px;display:block;color:#050d18;line-height:1.25}.fact span{font-size:14px;color:#39506d}
+    .skill-item{margin-bottom:23px}.skill-heading{font-weight:600;display:flex;justify-content:space-between;font-size:12px;text-transform:uppercase;letter-spacing:.4px}.skill-bar{height:10px;margin-top:6px;background:#dce8f8}.skill-bar span{display:block;height:100%;background:#149ddd}.skill-item{padding-bottom:13px;border-bottom:1px solid #dce8f3}.skill-heading{font-size:14px;text-transform:none;font-weight:600;letter-spacing:0}.skill-bar{display:none}.small-note{font-size:12px;color:#64758a;margin-top:14px}
+    .resume-title{font-size:26px;font-weight:700;margin:15px 0;color:#050d18}.resume-item{padding:0 0 20px 22px;border-left:2px solid #1f5297;position:relative}.resume-item:before{content:"";width:14px;height:14px;border:2px solid #1f5297;background:white;border-radius:50%;position:absolute;left:-8px;top:1px}.resume-item h4{font-size:18px;font-weight:600;color:#050d18;text-transform:uppercase;margin:0 0 10px}.resume-item h5{font-size:15px;background:#e4edf9;padding:5px 13px;display:inline-block;font-weight:600;margin:0 0 9px}.resume-item p{margin:0 0 9px}.resume-item ul{padding-left:18px;margin:10px 0 0}.resume-item li{padding-bottom:6px}
+    .portfolio-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px}.portfolio-card{background:white;box-shadow:0 2px 15px rgba(0,0,0,.08);overflow:hidden}.portfolio-illustration{min-height:190px;background:linear-gradient(135deg,#092744,#204a70);color:#eef9ff;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:30px;gap:10px}.portfolio-card:nth-child(2) .portfolio-illustration{background:linear-gradient(135deg,#173b6c,#1b768c)}.portfolio-illustration strong{font-size:32px;letter-spacing:2px}.portfolio-illustration small{font-size:12px;text-transform:uppercase;letter-spacing:2px}.portfolio-card .inner{padding:22px 24px}.portfolio-card h3{color:#173b6c;margin:0 0 9px;font-size:22px}.portfolio-card p{margin:0 0 18px}.tagline{font-size:12px;color:#53728b;letter-spacing:.4px;text-transform:uppercase;margin-bottom:12px}.btn-link{display:inline-flex;align-items:center;gap:6px;font-weight:600}.focus-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px}.focus-card{padding:2px 10px 15px 0}.focus-card .icon{color:#149ddd;font-size:30px;line-height:1.5}.focus-card h4{font-size:19px;color:#173b6c;margin:0 0 8px}.focus-card p{margin:0;font-size:14px;color:#46515c}.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.contact-box{background:white;box-shadow:0 0 24px rgba(0,0,0,.075);padding:24px}.contact-box h4{color:#173b6c;font-size:18px;margin-bottom:6px}.contact-box p{margin:0 0 10px}
+    footer{text-align:center;color:#a7b3c7;padding:16px 12px;font-size:12px;background:#040b14;margin-left:300px}
+    @media(max-width:1199px){#header{left:-300px}#header.open{left:0}#main,footer{margin-left:0}.mobile-nav-toggle{display:block}}
+    @media(max-width:767px){.container{padding:0 20px}.col-lg-4,.col-lg-8,.col-half,.col-third{width:100%}.about-photo{height:260px;margin-bottom:22px;max-width:340px}.section-title h2{font-size:30px}.facts-grid{grid-template-columns:1fr;gap:4px}.portfolio-grid,.contact-grid,.focus-grid{grid-template-columns:1fr}.content-section{padding:50px 0}#hero{min-height:530px;height:88vh;justify-content:flex-start;padding-left:16px}#hero h1{font-size:38px}#hero p{font-size:19px}#hero .hero-container{padding:8px;min-width:0}.resume-title{margin-top:25px}}
+    @media(min-width:768px) and (max-width:1024px){.portfolio-grid{grid-template-columns:1fr}.focus-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
 </head>
-
 <body>
-
-  <!-- ======= Mobile nav toggle button ======= -->
-  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
-  <!-- ======= Header ======= -->
+  <button class="mobile-nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">☰</button>
   <header id="header">
     <div class="d-flex flex-column">
-
       <div class="profile">
-        <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Rhyan Jenkins</a></h1>
-        <!-- <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-        </div> -->
+        <div class="profile-image"><span class="placeholder">RJ</span><img src="assets/img/profile-img.jpg" alt="Rhyan Jenkins portrait" onerror="this.style.display='none'"></div>
+        <h1><a href="#hero">Rhyan Jenkins</a></h1>
+        <div class="social-links">
+          <a href="https://github.com/RhyanJenkins" aria-label="GitHub">GH</a>
+          <a href="https://www.linkedin.com/in/rhyan-jenkins/" aria-label="LinkedIn">in</a>
+        </div>
       </div>
-
-      <nav class="nav-menu">
+      <nav class="nav-menu" aria-label="Main navigation">
         <ul>
-          <li class="active"><a href="index.html"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
-          <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
-          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
-
+          <li><a class="active" href="#hero"><span class="glyph">⌂</span>Home</a></li>
+          <li><a href="#about"><span class="glyph">◉</span>About</a></li>
+          <li><a href="#skills"><span class="glyph">▤</span>Skills</a></li>
+          <li><a href="#resume"><span class="glyph">▣</span>Resume</a></li>
+          <li><a href="#portfolio"><span class="glyph">▥</span>Portfolio</a></li>
+          <li><a href="#services"><span class="glyph">✦</span>Focus Areas</a></li>
+          <li><a href="#contact"><span class="glyph">✉</span>Contact</a></li>
         </ul>
-      </nav><!-- .nav-menu -->
-      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
-
+      </nav>
     </div>
-  </header><!-- End Header -->
+  </header>
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="hero-container" data-aos="fade-in">
+  <section id="hero" aria-label="Introduction">
+    <div class="hero-container">
       <h1>Rhyan Jenkins</h1>
-      <p>I'm a <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+      <p>My work spans <span class="typed" id="role-title" data-typed-items="Enterprise IT Operations,Identity &amp; Access Management,Endpoint Security &amp; Administration,Network Security &amp; Monitoring,Incident Investigation">Enterprise IT Operations</span></p>
     </div>
-  </section><!-- End Hero -->
+  </section>
 
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="content-section about">
       <div class="container">
-
-        <div class="section-title">
-          <h2>About</h2>
-          <p> Multidisciplinary designer who enjoys the struggle of learning new things, failing at those new things, and getting back up to try again. Less sociable in real life.</p>
-        </div>
-
+        <div class="section-title"><h2>About</h2><p>Enterprise IT professional with 8+ years of experience spanning secure technical support, endpoint management, identity and access administration, and technical incident resolution. I’m developing further expertise in cybersecurity engineering, incident response, and digital forensics through documented hands-on homelab work.</p></div>
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets\img\profile-img.jpg" class="img-fluid" alt="">
-          </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>UI/UX Designer &amp; Web Developer.</h3>
-            <p class="font-italic">
-              "You can't cross the sea merely by standing and staring at the water."  -Rabindranath Tagore
-            </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 6 July 1994</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> https://github.com/RhyanJenkins</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +123 456 7890</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> Dayton, Ohio, USA</li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                 <!-- <li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 30</li>-->
-                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Associates</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Email:</strong> rhyanjenkins94@gmail.com</li>
-                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
-                </ul>
-              </div>
-            </div>
-            <p>
-            I started my journey off when I stumbled upon a site called FreeCodeCamp.org. From there it's like I fell down a rabbit hole. I enjoyed my coding path and I picked up any book or site I could get my hands on to learn more and more. Before I knew it, I was learning 3 lanagauges at once. I since then I've kept going. 
-            </p>
+          <div class="col-lg-4"><div class="about-photo"><img src="assets/img/profile-img.jpg" alt="Portrait of Rhyan Jenkins" onerror="this.style.display='none'"></div></div>
+          <div class="col-lg-8"><h3>Enterprise IT &amp; Cybersecurity</h3>
+            <p>My career has included supporting large enterprise environments, improving secure device and access workflows, leading technical training, and collaborating across infrastructure and security teams.</p>
+            <p>I hold a <strong>BS in Cybersecurity (Programming &amp; Analysis)</strong> from Purdue University and use my cybersecurity homelab to develop practical skills in network defense, SIEM monitoring, authorized security testing, and evidence-based investigation.</p>
+            <p><strong>Based in:</strong> Chicago, IL &nbsp; · &nbsp; <strong>Focus:</strong> Digital forensics, incident response, and security engineering</p>
+            <p><a href="https://github.com/RhyanJenkins/Cybersecurity-Portfolio">Browse my technical project repository →</a></p>
           </div>
         </div>
-
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
+    <section id="facts" class="content-section">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Facts</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        <div class="section-title"><h2>Experience Highlights</h2><p>Selected experience and documented accomplishments from my enterprise IT career and cybersecurity projects.</p></div>
+        <div class="facts-grid">
+          <div class="fact"><strong>8+ years</strong><span>Enterprise IT experience</span></div>
+          <div class="fact"><strong>14,000+</strong><span>Users in previously supported environments</span></div>
+          <div class="fact"><strong>2 projects</strong><span>Featured homelab and investigation documents</span></div>
         </div>
-
-       <!-- <div class="row no-gutters">
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
-            <div class="count-box">
-              <i class="icofont-simple-smile"></i>
-              <span data-toggle="counter-up">232</span>
-              <p><strong>Happy Clients</strong> consequuntur quae</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
-            <div class="count-box">
-              <i class="icofont-document-folder"></i>
-              <span data-toggle="counter-up">521</span>
-              <p><strong>Projects</strong> adipisci atque cum quia aut</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
-            <div class="count-box">
-              <i class="icofont-live-support"></i>
-              <span data-toggle="counter-up">1,463</span>
-              <p><strong>Hours Of Support</strong> aut commodi quaerat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
-            <div class="count-box">
-              <i class="icofont-users-alt-5"></i>
-              <span data-toggle="counter-up">15</span>
-              <p><strong>Hard Workers</strong> rerum asperiores dolor</p>
-            </div>
-          </div> -->
-
-        </div>
-
       </div>
-    </section><!-- End Facts Section -->
+    </section>
 
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+    <section id="skills" class="content-section section-bg skills">
       <div class="container">
-
-        <div class="section-title">
-          <h2>Skills</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row skills-content">
-
-          <div class="col-lg-6" data-aos="fade-up">
-
-            <div class="progress">
-              <span class="skill">HTML <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">CSS <i class="val">60%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">JavaScript <i class="val">10%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-
-            <div class="progress">
-              <span class="skill">Java <i class="val">10%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">WordPress/CMS <i class="val">0%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Photoshop/Light Room <i class="val">55%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Skills Section -->
-
-    <!-- ======= Resume Section ======= -->
-    <section id="resume" class="resume">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Resume</h2>
-          <p>When a client approches me with an idea or dream, I make it my goal to bring it to life. With my speedy response time and excellent customer service, I leave my clients happy with my work.</p>
-        </div>
-
+        <div class="section-title"><h2>Skills</h2><p>Experience from enterprise IT roles, complemented by hands-on cybersecurity homelab implementations. Bars organize skill areas visually; they do not imply measured proficiency scores.</p></div>
         <div class="row">
-          <div class="col-lg-6" data-aos="fade-up">
-            <h3 class="resume-title">Sumary</h3>
-            <div class="resume-item pb-0">
-              <h4>Rhyan Jenkins</h4>
-              <p><em>Innovative and deadline-driven Graphic Designer and Photographer with 3+ year of experience shooting, designing and developing user-centered digital/print marketing material from initial concept to final, polished deliverable.</em></p>
-              <ul>
-                <li>Dayton, Ohio, USA</li>
-                <li>(123) 456-7891</li>
-                <li>rhyanjenkins94@gmail.com</li>
-              </ul>
-            </div>
+          <div class="col-half">
+            <div class="skill-item"><div class="skill-heading"><span>Identity &amp; access management</span></div></div>
+            <div class="skill-item"><div class="skill-heading"><span>Microsoft Intune &amp; endpoint management</span></div></div>
+            <div class="skill-item"><div class="skill-heading"><span>Enterprise troubleshooting &amp; IT operations</span></div></div>
+          </div>
+          <div class="col-half">
+            <div class="skill-item"><div class="skill-heading"><span>OPNsense &amp; network security</span></div></div>
+            <div class="skill-item"><div class="skill-heading"><span>Wazuh SIEM &amp; log investigation</span></div></div>
+            <div class="skill-item"><div class="skill-heading"><span>Proxmox &amp; Linux administration</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <section id="resume" class="content-section resume">
+      <div class="container"><div class="section-title"><h2>Resume</h2><p>My professional background connects enterprise systems support, IAM, endpoint management, and security-focused incident resolution with active cybersecurity training and technical investigation.</p></div>
+        <div class="row">
+          <div class="col-half">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item"><h4>Rhyan Jenkins</h4><p>Enterprise IT professional with more than eight years of progressively responsible experience. Interested in cybersecurity analyst, incident response, and digital forensic roles.</p><p>Chicago, IL · <a href="https://www.linkedin.com/in/rhyan-jenkins/">LinkedIn</a></p></div>
             <h3 class="resume-title">Education</h3>
-            <div class="resume-item">
-              <h4>Master of Fine Arts &amp; Graphic Design</h4>
-              <h5>2015 - 2016</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
-            </div>
-            <div class="resume-item">
-              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
-              <h5>2010 - 2014</h5>
-              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
-              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
-            </div>
+            <div class="resume-item"><h4>Bachelor of Science in Cybersecurity</h4><h5>Dean's List — 2024</h5><p><em>Purdue University · Programming &amp; Analysis</em></p></div>
+            <h3 class="resume-title">Professional Development</h3>
+            <div class="resume-item"><h4>CompTIA Security+</h4><h5>In progress</h5><p>Continued hands-on development in security monitoring, network defense, incident analysis, and digital forensics.</p></div>
           </div>
-          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-half">
             <h3 class="resume-title">Professional Experience</h3>
-            <div class="resume-item">
-              <h4>Senior graphic design specialist</h4>
-              <h5>2019 - Present</h5>
-              <p><em>Experion, New York, NY </em></p>
-              <ul>
-                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
-                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
-                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
-                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
-              </ul>
-            </div>
-            <div class="resume-item">
-              <h4>Graphic design specialist</h4>
-              <h5>2017 - 2018</h5>
-              <p><em>Stepping Stone Advertising, New York, NY</em></p>
-              <ul>
-                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
-                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
-                <li>Recommended and consulted with clients on the most appropriate graphic design</li>
-                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
-              </ul>
-            </div>
+            <div class="resume-item"><h4>Multi-Level Support Desk Technician</h4><h5>April 2025 – March 2026</h5><p><em>Federal Home Loan Bank of Chicago</em></p><ul><li>Lead technical training initiatives and secure onboarding across 20+ departments.</li><li>Investigate endpoint, account-access, and configuration issues in collaboration with IT security and infrastructure teams.</li></ul></div>
+            <div class="resume-item"><h4>Mobile Communications Specialist</h4><h5>March 2024 – April 2025</h5><p><em>Texas Department of Family and Protective Services</em></p><ul><li>Supported secure mobile provisioning and device management for a 14,000+ employee agency.</li><li>Investigated mobile security, multifactor authentication, and MDM issues.</li></ul></div>
+            <div class="resume-item"><h4>Desktop Support Technician</h4><h5>July 2022 – March 2024</h5><p><em>GTS Technology Solutions</em></p><ul><li>Provided advanced LAN/WAN, Active Directory, Intune, and endpoint support.</li><li>Managed technical escalations, network events, and ITIL-aligned documentation.</li></ul></div>
+            <div class="resume-item"><h4>Additional Leadership Roles</h4><h5>2017 – 2022</h5><p><em>Serco · ATOS · Spectrum</em></p><p>Team leadership, technical support supervision, account administration, and incident coordination.</p></div>
           </div>
         </div>
-
       </div>
-    </section><!-- End Resume Section -->
+    </section>
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    <section id="portfolio" class="content-section section-bg portfolio">
+      <div class="container"><div class="section-title"><h2>Portfolio</h2><p>Selected documented cybersecurity projects. Technical evidence and full reports live in a separate GitHub repository.</p></div>
+        <div class="portfolio-grid">
+          <article class="portfolio-card"><div class="portfolio-illustration"><small>Infrastructure · Security Engineering</small><strong>PRJ-001</strong><span>Cybersecurity Homelab</span></div><div class="inner"><div class="tagline">Active · Documented infrastructure</div><h3>Homelab Architecture &amp; Security Design</h3><p>Proxmox VE infrastructure, segmented lab networks, OPNsense routing and firewalling, Wazuh SIEM, and controlled offensive security testing.</p><a class="btn-link" href="https://github.com/RhyanJenkins/Cybersecurity-Portfolio/tree/main/01-homelab-infrastructure/PRJ-001-homelab-architecture">View project documentation →</a></div></article>
+          <article class="portfolio-card"><div class="portfolio-illustration"><small>Incident Response · Detection Analysis</small><strong>CASE-001</strong><span>FTP / SIEM Visibility</span></div><div class="inner"><div class="tagline">Open · Investigation ongoing</div><h3>FTP Traffic &amp; SIEM Visibility Investigation</h3><p>Correlating Kali TCP connectivity, OPNsense firewall observations, and Wazuh search results. Includes seven published sanitized evidence screenshots.</p><a class="btn-link" href="https://github.com/RhyanJenkins/Cybersecurity-Portfolio/tree/main/03-incident-response/CASE-001-ftp-siem-visibility">View case study →</a><p style="margin:8px 0 0"><a href="https://github.com/RhyanJenkins/Cybersecurity-Portfolio/tree/main/03-incident-response/CASE-001-ftp-siem-visibility/evidence">View evidence →</a></p></div></article>
         </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-1.jpg" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets\img\portfolio\Web Design Cert.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets\img\portfolio\Web Design Cert.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-3.jpg" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-4.jpg" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-5.jpg" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-6.jpg" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-7.jpg" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-8.jpg" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="assets/img/portfolio/portfolio-9.jpg" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
+    </section>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+    <section id="services" class="content-section">
+      <div class="container"><div class="section-title"><h2>Focus Areas</h2><p>How my current experience and continuing security development fit together.</p></div>
+        <div class="focus-grid">
+          <div class="focus-card"><div class="icon">⌘</div><h4>Security Engineering</h4><p>Virtualization, network segmentation, firewall configuration, and infrastructure security.</p></div>
+          <div class="focus-card"><div class="icon">◎</div><h4>Security Operations</h4><p>SIEM monitoring, event correlation, detection validation, and log investigation.</p></div>
+          <div class="focus-card"><div class="icon">◇</div><h4>Digital Forensics &amp; Response</h4><p>Developing evidence-handling, incident reconstruction, and investigative reporting skills.</p></div>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="icofont-computer"></i></div>
-            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
-            <h4 class="title"><a href="">Dolor Sitema</a></h4>
-            <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="icofont-earth"></i></div>
-            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
-            <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
-            <div class="icon"><i class="icofont-image"></i></div>
-            <h4 class="title"><a href="">Magni Dolores</a></h4>
-            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
-            <div class="icon"><i class="icofont-settings"></i></div>
-            <h4 class="title"><a href="">Nemo Enim</a></h4>
-            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
-          </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="icofont-tasks-alt"></i></div>
-            <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-            <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
-          </div>
-        </div>
-
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials section-bg">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Testimonials</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="owl-carousel testimonials-carousel">
-
-          <div class="testimonial-item" data-aos="fade-up">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-            <h3>Saul Goodman</h3>
-            <h4>Ceo &amp; Founder</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-            <h3>Sara Wilsson</h3>
-            <h4>Designer</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-            <h3>Jena Karlis</h3>
-            <h4>Store Owner</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-            <h3>Matt Brandon</h3>
-            <h4>Freelancer</h4>
-          </div>
-
-          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
-            <p>
-              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
-              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-            </p>
-            <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-            <h3>John Larson</h3>
-            <h4>Entrepreneur</h4>
-          </div>
-
-        </div>
-
+    <section id="contact" class="content-section section-bg">
+      <div class="container"><div class="section-title"><h2>Contact</h2><p>Connect with me for professional opportunities or to review my published technical projects.</p></div>
+        <div class="contact-grid"><div class="contact-box"><h4>LinkedIn</h4><p>Professional profile and experience</p><a href="https://www.linkedin.com/in/rhyan-jenkins/">linkedin.com/in/rhyan-jenkins/ →</a></div><div class="contact-box"><h4>GitHub</h4><p>Project documentation and case studies</p><a href="https://github.com/RhyanJenkins">github.com/RhyanJenkins →</a></div></div>
       </div>
-    </section><!-- End Testimonials Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="icofont-google-map"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="icofont-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="icofont-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validate"></div>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <!-- <footer id="footer">
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>iPortfolio</span></strong>
-      </div>
-      <div class="credits">
-        All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-        <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-  </footer> -->
-
-  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    </section>
+  </main>
+  <footer>Rhyan Jenkins · Cybersecurity Portfolio · Chicago, IL</footer>
+  <script>
+    (function(){
+      const titles=['Enterprise IT Operations','Identity & Access Management','Endpoint Security & Administration','Network Security & Monitoring','Incident Investigation'];
+      const target=document.getElementById('role-title');
+      let index=0, pos=titles[0].length, deleting=false;
+      // Typed-style topic rotation keeps the original site behavior; focus areas are grounded in professional experience and lab work.
+      function tick(){
+        const word=titles[index];
+        if(deleting){pos=Math.max(0,pos-1);target.textContent=word.slice(0,pos);
+          if(pos===0){deleting=false;index=(index+1)%titles.length;setTimeout(tick,230);return;}
+          setTimeout(tick,34);return;
+        }
+        pos=Math.min(titles[index].length,pos+1);target.textContent=titles[index].slice(0,pos);
+        if(pos===titles[index].length){deleting=true;setTimeout(tick,2800);}else{setTimeout(tick,72);}
+      }
+      if(target && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){setTimeout(tick,3500);}
+      const btn=document.querySelector('.mobile-nav-toggle'),sidebar=document.querySelector('#header');
+      btn.addEventListener('click',()=>{let open=sidebar.classList.toggle('open');btn.setAttribute('aria-expanded',String(open));btn.textContent=open?'✕':'☰';});
+      document.querySelectorAll('.nav-menu a').forEach(a=>a.addEventListener('click',()=>{document.querySelectorAll('.nav-menu a').forEach(n=>n.classList.remove('active'));a.classList.add('active');sidebar.classList.remove('open');btn.setAttribute('aria-expanded','false');btn.textContent='☰';}));
+    })();
+  </script>
 </body>
-
 </html>
