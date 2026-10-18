@@ -99,16 +99,25 @@
       box-shadow: none;
     }
 
-    /* No mat: photograph touches the colored frame along every edge. */
-    #header .profile-image img {
-      display: block;
-      position: relative;
-      z-index: 1;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center center;
-    }
+/* Profile photograph — no additional dark border */
+#header .profile-image img {
+  display: block;
+  position: relative;
+  z-index: 1;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center center;
+
+  /* Override the original iPortfolio styling */
+  border: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+
 
     #header .profile-image .placeholder {
       position: absolute;
